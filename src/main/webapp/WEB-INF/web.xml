@@ -1,0 +1,24 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <welcome-file-list><welcome-file>personalinfo.html</welcome-file></welcome-file-list>
+
+    <servlet><servlet-name>sample</servlet-name><servlet-class>com.as.samples.Sample</servlet-class></servlet>
+    <servlet-mapping><servlet-name>sample</servlet-name><url-pattern>/sample</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>personal</servlet-name><servlet-class>com.as.samples.PersonalInfoServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>personal</servlet-name><url-pattern>/personal</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>contact</servlet-name><servlet-class>com.as.samples.ContactInfoServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>contact</servlet-name><url-pattern>/contact</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>bank</servlet-name><servlet-class>com.as.samples.BankInfoServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>bank</servlet-name><url-pattern>/bank</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>calc</servlet-name><servlet-class>com.as.samples.CalculatorServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>calc</servlet-name><url-pattern>/calc</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>weather</servlet-name><servlet-class>com.as.samples.WeatherServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>weather</servlet-name><url-pattern>/weather</url-pattern></servlet-mapping>
+</web-app>
